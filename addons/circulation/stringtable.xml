@@ -2,19 +2,19 @@
 <Project name="kcz">
     <Package name="circulation">
         <Key ID="STR_kcz_circulation_BloodType_DisplayName">
-            <Original>Change Blood Type</Original>
+            <English>Change Blood Type</English>
         </Key>
         <Key ID="STR_kcz_circulation_BloodType_Label">
-            <Original>Blood Type</Original>
+            <English>Blood Type</English>
         </Key>
         <Key ID="STR_kcz_circulation_BloodType_Tooltip">
-            <Original>Blood type to assign to this unit</Original>
+            <English>Blood type to assign to this unit</English>
         </Key>
         <Key ID="STR_kcz_circulation_Setting_EnableZenActions_Description">
-            <Original>Show the "Change blood group" action in the ZEN Zeus right-click context menu</Original>
+            <English>Show the "Change blood group" action in the ZEN Zeus right-click context menu</English>
         </Key>
         <Key ID="STR_kcz_circulation_Setting_EnableZenActions_DisplayName">
-            <Original>Enable ZEN Change Blood Type Action</Original>
+            <English>Enable ZEN Change Blood Type Action</English>
         </Key>
     </Package>
 </Project>

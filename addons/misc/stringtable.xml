@@ -2,16 +2,16 @@
 <Project name="kcz">
     <Package name="misc">
         <Key ID="STR_kcz_misc_DisableAiDeathPrevention_DisplayName">
-            <Original>Disable AI Death Prevention</Original>
+            <English>Disable AI Death Prevention</English>
         </Key>
         <Key ID="STR_kcz_misc_EnableAiDeathPrevention_DisplayName">
-            <Original>Enable AI Death Prevention</Original>
+            <English>Enable AI Death Prevention</English>
         </Key>
         <Key ID="STR_kcz_misc_Setting_EnableZenActions_Description">
-            <Original>Show the "Toggle Instant AI Death" action in the ZEN Zeus right-click context menu</Original>
+            <English>Show the "Toggle Instant AI Death" action in the ZEN Zeus right-click context menu</English>
         </Key>
         <Key ID="STR_kcz_misc_Setting_EnableZenActions_DisplayName">
-            <Original>Enable ZEN AI Death Prevention Action</Original>
+            <English>Enable ZEN AI Death Prevention Action</English>
         </Key>
     </Package>
 </Project>

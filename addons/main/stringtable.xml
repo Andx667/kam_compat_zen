@@ -2,7 +2,7 @@
 <Project name="kcz">
     <Package name="main">
         <Key ID="STR_kcz_main_Category_DisplayName">
-            <Original>KAM</Original>
+            <English>KAM</English>
         </Key>
     </Package>
 </Project>
