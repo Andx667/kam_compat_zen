@@ -28,6 +28,10 @@
 // --- ACE reference macros (same idea as the KAT ones above, for ACE3 itself) ---
 #define ACE_PREFIX ace
 
+#define ACEGVAR(component,var) TRIPLES(ACE_PREFIX,component,var)
+#define QACEGVAR(component,var) QUOTE(ACEGVAR(component,var))
+#define QQACEGVAR(component,var) QUOTE(QACEGVAR(component,var))
+
 #define ACELSTRING(component,key) QUOTE(TRIPLES(STR,DOUBLES(ACE_PREFIX,component),key))
 #define ACECSTRING(component,key) QUOTE(TRIPLES($STR,DOUBLES(ACE_PREFIX,component),key))
 #define ACELLSTRING(component,key) localize ACELSTRING(component,key)

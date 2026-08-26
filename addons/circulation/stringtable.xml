@@ -1,20 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="kcz">
     <Package name="circulation">
-        <Key ID="STR_kcz_circulation_BloodType_DisplayName">
-            <English>Change Blood Type</English>
-        </Key>
         <Key ID="STR_kcz_circulation_BloodType_Label">
             <English>Blood Type</English>
         </Key>
         <Key ID="STR_kcz_circulation_BloodType_Tooltip">
             <English>Blood type to assign to this unit</English>
         </Key>
+        <Key ID="STR_kcz_circulation_BloodVolume_Label">
+            <English>Blood Volume</English>
+        </Key>
+        <Key ID="STR_kcz_circulation_BloodVolume_Tooltip">
+            <English>Total blood volume, in liters</English>
+        </Key>
+        <Key ID="STR_kcz_circulation_CardiacState_Asystole">
+            <English>Asystole</English>
+        </Key>
+        <Key ID="STR_kcz_circulation_CardiacState_Label">
+            <English>Cardiac Rhythm</English>
+        </Key>
+        <Key ID="STR_kcz_circulation_CardiacState_Normal">
+            <English>Normal (No Arrest)</English>
+        </Key>
+        <Key ID="STR_kcz_circulation_CardiacState_PEA">
+            <English>Pulseless Electrical Activity (PEA)</English>
+        </Key>
+        <Key ID="STR_kcz_circulation_CardiacState_Tooltip">
+            <English>Cardiac rhythm to assign to this unit</English>
+        </Key>
+        <Key ID="STR_kcz_circulation_CardiacState_VF">
+            <English>Ventricular Fibrillation (VF)</English>
+        </Key>
+        <Key ID="STR_kcz_circulation_CardiacState_VT">
+            <English>Ventricular Tachycardia (VT)</English>
+        </Key>
         <Key ID="STR_kcz_circulation_Setting_EnableZenActions_Description">
-            <English>Show the "Change blood group" action in the ZEN Zeus right-click context menu</English>
+            <English>Show the "Change blood group / volume" and "Change Cardiac State" actions in the ZEN Zeus right-click context menu</English>
         </Key>
         <Key ID="STR_kcz_circulation_Setting_EnableZenActions_DisplayName">
-            <English>Enable ZEN Change Blood Type Action</English>
+            <English>Enable ZEN Circulation Actions</English>
         </Key>
     </Package>
 </Project>
