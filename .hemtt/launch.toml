@@ -1,0 +1,7 @@
+[default]
+workshop = [
+    "450814997",  # CBA_A3
+    "463939057",  # ACE3
+    "2020940806", # KAT - Advanced Medical (KAM)
+    "1779063631", # Zeus Enhanced (ZEN)
+]

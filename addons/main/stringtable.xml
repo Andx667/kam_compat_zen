@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="kcz">
-    <Package name="main"></Package>
+    <Package name="main">
+        <Key ID="STR_kcz_main_Category_DisplayName">
+            <Original>KAM</Original>
+        </Key>
+    </Package>
 </Project>

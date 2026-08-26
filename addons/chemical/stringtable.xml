@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kcz">
+    <Package name="chemical">
+        <Key ID="STR_kcz_chemical_GasCloud_GasType_Tooltip">
+            <Original>Type of gas to create</Original>
+        </Key>
+        <Key ID="STR_kcz_chemical_GasCloud_Radius_Tooltip">
+            <Original>Radius of the gas cloud, in meters</Original>
+        </Key>
+        <Key ID="STR_kcz_chemical_GasCloud_Sealable_Tooltip">
+            <Original>Allow this gas source to be sealed off with a sealant</Original>
+        </Key>
+        <Key ID="STR_kcz_chemical_Setting_EnableZenActions_Description">
+            <Original>Show the "Create Gas Cloud" action in the ZEN Zeus right-click context menu</Original>
+        </Key>
+        <Key ID="STR_kcz_chemical_Setting_EnableZenActions_DisplayName">
+            <Original>Enable ZEN Gas Cloud Action</Original>
+        </Key>
+    </Package>
+</Project>

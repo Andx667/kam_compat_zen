@@ -1,3 +1,4 @@
+#define MAINPREFIX z
 #define PREFIX kcz
 #define COMPONENT_NAME "KAM Compat ZEN"
 

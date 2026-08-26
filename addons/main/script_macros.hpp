@@ -1,2 +1,43 @@
 #include "\x\cba\addons\main\script_macros_common.hpp"
 #include "\x\cba\addons\xeh\script_xeh.hpp"
+
+// CBA's default PREP() assumes functions live flat in the addon root. Every
+// component here keeps its functions in a functions\ subfolder instead, so
+// PREP needs overriding to match (same fix ACE3 applies in its own script_macros.hpp).
+#ifdef DISABLE_COMPILE_CACHE
+    #undef PREP
+    #define PREP(fncName) FUNC(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName).sqf)
+#else
+    #undef PREP
+    #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
+#endif
+
+// --- KAT (KAT - Advanced Medical / KAM) reference macros ---
+#define KAT_PREFIX kat
+
+#define KAT_ADDON(component) DOUBLES(KAT_PREFIX,component)
+
+#define KATGVAR(module,var) TRIPLES(KAT_PREFIX,module,var)
+#define QKATGVAR(module,var) QUOTE(KATGVAR(module,var))
+#define QQKATGVAR(module,var) QUOTE(QKATGVAR(module,var))
+
+#define KATFUNC(module,function) TRIPLES(DOUBLES(KAT_PREFIX,module),fnc,function)
+#define QKATFUNC(module,function) QUOTE(KATFUNC(module,function))
+#define QQKATFUNC(module,function) QUOTE(QKATFUNC(module,function))
+
+#define KATPATHTOF(component,path) \x\kat\addons\component\path
+#define QKATPATHTOF(component,path) QUOTE(KATPATHTOF(component,path))
+
+// Reference KAM's own stringtable entries (its "component" is its own COMPONENT
+// name, e.g. "chemical", "key" is the same key from its stringtable.xml) instead
+// of duplicating its text into ours. Mirrors CBA's ELSTRING/ECSTRING pattern.
+#define KATLSTRING(component,key) QUOTE(TRIPLES(STR,DOUBLES(KAT_PREFIX,component),key))
+#define KATCSTRING(component,key) QUOTE(TRIPLES($STR,DOUBLES(KAT_PREFIX,component),key))
+#define KATLLSTRING(component,key) localize KATLSTRING(component,key)
+
+// --- Shared ZEN context menu category ---
+// Every kcz_* component that adds a ZEN right-click action nests it under this
+// single class so they all appear under one "KAM" entry in the context menu.
+// This name must stay identical (not component-derived) across every
+// CfgContext.hpp that extends it.
+#define KAM_MENU_CATEGORY kcz_context_kam
