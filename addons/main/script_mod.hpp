@@ -1,0 +1,11 @@
+#define PREFIX kcz
+#define COMPONENT_NAME "KAM Compat ZEN"
+
+#include "script_version.hpp"
+
+#define VERSION MAJOR.MINOR
+#define VERSION_STR MAJOR.MINOR.PATCH
+#define VERSION_AR MAJOR,MINOR,PATCH,BUILD
+
+#define REQUIRED_VERSION 2.18
+#define REQUIRED_CBA_VERSION {3,15,1}
