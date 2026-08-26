@@ -4,7 +4,7 @@ prefix = "kcz"
 mainprefix = "z"
 
 [version]
-
+git_hash = 0
 
 [files]
 include = [
