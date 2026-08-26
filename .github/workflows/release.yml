@@ -1,0 +1,44 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build & Publish Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup HEMTT
+        uses: arma-actions/hemtt@v1
+
+      # Optional: restore a persistent signing key so the mod's bikey
+      # stays the same across releases (needed for server whitelisting).
+      # Base64-encode a .biprivatekey and store it as the HEMTT_RELEASE_KEY
+      # secret to enable this step; without it HEMTT signs with a fresh key
+      # each release.
+      - name: Restore signing key
+        if: ${{ secrets.HEMTT_RELEASE_KEY != '' }}
+        env:
+          HEMTT_RELEASE_KEY: ${{ secrets.HEMTT_RELEASE_KEY }}
+        run: echo "$HEMTT_RELEASE_KEY" | base64 -d > kcz.biprivatekey
+
+      - name: Build release
+        run: hemtt release
+
+      - name: Drop rolling "latest" alias
+        run: rm -f releases/*-latest.zip
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v3
+        with:
+          files: releases/*.zip
+          generate_release_notes: true
+          fail_on_unmatched_files: true
