@@ -3,6 +3,7 @@
 Mod metadata, versioning, and the shared macro/include layer the other addons build on. No gameplay logic of its own.
 
 Provides:
+
 - `KATFUNC`/`KATGVAR`/`KATLSTRING` macros ([script_macros.hpp](script_macros.hpp)) for referencing [KAM](https://github.com/Tomcat-SG/KAM)'s functions, variables, and stringtable entries without duplicating them, plus the equivalent `ACEFUNC`/`ACEGVAR` macros for ACE3.
 - `KAM_MENU_CATEGORY` — the single ZEN context-menu category every other addon nests its actions under, so they all appear grouped as one "KAM" entry.
 

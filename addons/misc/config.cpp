@@ -9,6 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             "cba_main",
             "kcz_main",
+            "kcz_common",
             "ace_main",
             "kat_main",
             "kat_misc",
