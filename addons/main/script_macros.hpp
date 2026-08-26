@@ -32,6 +32,10 @@
 #define QACEGVAR(component,var) QUOTE(ACEGVAR(component,var))
 #define QQACEGVAR(component,var) QUOTE(QACEGVAR(component,var))
 
+#define ACEFUNC(component,function) TRIPLES(DOUBLES(ACE_PREFIX,component),fnc,function)
+#define QACEFUNC(component,function) QUOTE(ACEFUNC(component,function))
+#define QQACEFUNC(component,function) QUOTE(QACEFUNC(component,function))
+
 #define ACELSTRING(component,key) QUOTE(TRIPLES(STR,DOUBLES(ACE_PREFIX,component),key))
 #define ACECSTRING(component,key) QUOTE(TRIPLES($STR,DOUBLES(ACE_PREFIX,component),key))
 #define ACELLSTRING(component,key) localize ACELSTRING(component,key)
