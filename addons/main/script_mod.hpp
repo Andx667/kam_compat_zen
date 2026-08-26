@@ -1,6 +1,6 @@
 #define MAINPREFIX z
 #define PREFIX kcz
-#define COMPONENT_NAME "KAM Compat ZEN"
+#define COMPONENT_NAME "KAM Compat ZEN [Beta]"
 
 #include "script_version.hpp"
 

@@ -1,0 +1,2 @@
+PREP(changeBloodType);
+PREP(setCardiacState);
