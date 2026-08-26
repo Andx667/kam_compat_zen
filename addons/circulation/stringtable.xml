@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kcz">
+    <Package name="circulation">
+        <Key ID="STR_kcz_circulation_BloodType_DisplayName">
+            <Original>Change Blood Type</Original>
+        </Key>
+        <Key ID="STR_kcz_circulation_BloodType_Label">
+            <Original>Blood Type</Original>
+        </Key>
+        <Key ID="STR_kcz_circulation_BloodType_Tooltip">
+            <Original>Blood type to assign to this unit</Original>
+        </Key>
+        <Key ID="STR_kcz_circulation_Setting_EnableZenActions_Description">
+            <Original>Show the "Change blood group" action in the ZEN Zeus right-click context menu</Original>
+        </Key>
+        <Key ID="STR_kcz_circulation_Setting_EnableZenActions_DisplayName">
+            <Original>Enable ZEN Change Blood Type Action</Original>
+        </Key>
+    </Package>
+</Project>

@@ -1,16 +1,6 @@
 #include "\x\cba\addons\main\script_macros_common.hpp"
 #include "\x\cba\addons\xeh\script_xeh.hpp"
-
-// CBA's default PREP() assumes functions live flat in the addon root. Every
-// component here keeps its functions in a functions\ subfolder instead, so
-// PREP needs overriding to match (same fix ACE3 applies in its own script_macros.hpp).
-#ifdef DISABLE_COMPILE_CACHE
-    #undef PREP
-    #define PREP(fncName) FUNC(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName).sqf)
-#else
-    #undef PREP
-    #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
-#endif
+#include "\z\ace\addons\main\script_macros.hpp"
 
 // --- KAT (KAT - Advanced Medical / KAM) reference macros ---
 #define KAT_PREFIX kat
@@ -34,6 +24,16 @@
 #define KATLSTRING(component,key) QUOTE(TRIPLES(STR,DOUBLES(KAT_PREFIX,component),key))
 #define KATCSTRING(component,key) QUOTE(TRIPLES($STR,DOUBLES(KAT_PREFIX,component),key))
 #define KATLLSTRING(component,key) localize KATLSTRING(component,key)
+
+// --- ACE reference macros (same idea as the KAT ones above, for ACE3 itself) ---
+#define ACE_PREFIX ace
+
+#define ACELSTRING(component,key) QUOTE(TRIPLES(STR,DOUBLES(ACE_PREFIX,component),key))
+#define ACECSTRING(component,key) QUOTE(TRIPLES($STR,DOUBLES(ACE_PREFIX,component),key))
+#define ACELLSTRING(component,key) localize ACELSTRING(component,key)
+
+#define ACEPATHTOF(component,path) \z\ace\addons\component\path
+#define QACEPATHTOF(component,path) QUOTE(ACEPATHTOF(component,path))
 
 // --- Shared ZEN context menu category ---
 // Every kcz_* component that adds a ZEN right-click action nests it under this

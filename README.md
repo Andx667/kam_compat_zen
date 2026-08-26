@@ -7,6 +7,10 @@ A compatibility patch between [KAT - Advanced Medical (KAM)](https://github.com/
 Addons that add ZEN right-click context menu actions are named after the KAM component they bridge to, and nest their entries under a shared "KAM" category (defined once in `addons/main`).
 
 - `addons/chemical` — bridges to KAM's `kat_chemical`. Currently implements: **Create Gas Cloud** (radius/gas type/sealable dialog, wired to KAM's gas source system).
+- `addons/circulation` — bridges to KAM's `kat_circulation`. Currently implements: **Change Blood Type** (combo dialog, right-click a unit).
+- `addons/misc` — bridges to KAM's `kat_misc`. Currently implements: **Toggle Instant AI Death Prevention** (instant toggle, right-click an AI unit).
+
+Each of these addons has its own CBA setting (`Enable ZEN ... Action`) to hide its context menu entry.
 
 ## Dependencies
 
