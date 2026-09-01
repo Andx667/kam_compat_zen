@@ -25,9 +25,9 @@ class CfgMods {
         actionName = "";
         action = "";
         overview = "Compatibility patch between KAT - Advanced Medical (KAM) and Zeus Enhanced (ZEN).";
-        picture = "";
-        logo = "";
-        logoOver = "";
+        picture = "\z\kcz\addons\main\data\logo_ca.paa";
+        logo = "\z\kcz\addons\main\data\logo_ca.paa";
+        logoOver = "\z\kcz\addons\main\data\logo_ca.paa";
         tooltip = COMPONENT_NAME;
     };
 };

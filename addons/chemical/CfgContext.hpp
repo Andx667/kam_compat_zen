@@ -3,7 +3,7 @@ class zen_context_menu_actions {
         class GVAR(gasCloud) {
             displayName = KATCSTRING(chemical,GasModule_Displayname);
             icon = QKATPATHTOF(chemical,ui\Gasmask_icon.paa);
-            condition = QUOTE(GVAR(enableZenActions) && {!(_hoveredEntity isEqualType objNull && {!isNull _hoveredEntity} && {_hoveredEntity isKindOf 'CAManBase'})});
+            condition = QUOTE(GVAR(enableZenActions) && {!(KAM_HOVERED_UNIT)});
             statement = QUOTE([ARR_2(_position,_hoveredEntity)] call FUNC(openGasCloudDialog));
         };
     };
