@@ -9,7 +9,7 @@ class CfgPatches {
         requiredAddons[] = {"cba_main", "ace_main", "kat_main", "zen_main", "zen_context_menu"};
         author = "Andx";
         authors[] = {"Andx"};
-        url = "";
+        url = "https://github.com/Andx667/kam_compat_zen";
         VERSION_CONFIG;
     };
 };
@@ -19,15 +19,12 @@ class CfgPatches {
 class CfgMods {
     class PREFIX {
         dir = "@KAM_Compat_ZEN";
-        name = COMPONENT_NAME;
-        author = "Andx";
-        authors[] = {"Andx"};
-        actionName = "";
-        action = "";
-        overview = "Compatibility patch between KAT - Advanced Medical (KAM) and Zeus Enhanced (ZEN).";
-        picture = "\z\kcz\addons\main\data\logo_ca.paa";
-        logo = "\z\kcz\addons\main\data\logo_ca.paa";
-        logoOver = "\z\kcz\addons\main\data\logo_ca.paa";
-        tooltip = COMPONENT_NAME;
+        name = "KAM Compat ZEN [Beta]";
+        picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca";
+        hidePicture = "true";
+        hideName = "true";
+        actionName = "Website";
+        action = "https://github.com/Andx667/kam_compat_zen";
+        description = "Compatibility patch between KAT - Advanced Medical (KAM) and Zeus Enhanced (ZEN).";
     };
 };
