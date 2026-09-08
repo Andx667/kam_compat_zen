@@ -3,7 +3,7 @@ class zen_context_menu_actions {
         class GVAR(manageAirway) {
             displayName = KATCSTRING(zeus,manageAirway_Module_displayname);
             icon = QACEPATHTOF(medical_gui,data\categories\airway_management.paa);
-            condition = QUOTE(GVAR(enableZenActions) && {_hoveredEntity isEqualType objNull} && {_hoveredEntity isKindOf 'CAManBase'});
+            condition = QUOTE(GVAR(enableZenActions) && {KAM_HOVERED_UNIT});
             statement = QUOTE([_hoveredEntity] call FUNC(manageAirway));
         };
     };

@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    name: Check & Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup HEMTT
+        uses: arma-actions/hemtt@v1
+
+      - name: Check for errors
+        run: hemtt check --pedantic
+
+      - name: Build
+        run: hemtt build
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: kcz-build-${{ github.sha }}
+          path: .hemttout/build
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 7

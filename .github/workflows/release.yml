@@ -1,0 +1,33 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build & Publish Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup HEMTT
+        uses: arma-actions/hemtt@v1
+
+      - name: Build release
+        run: hemtt release
+
+      - name: Drop rolling "latest" alias
+        run: rm -f releases/*-latest.zip
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v3
+        with:
+          files: releases/*.zip
+          generate_release_notes: true
+          fail_on_unmatched_files: true

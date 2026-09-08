@@ -49,3 +49,10 @@
 // This name must stay identical (not component-derived) across every
 // CfgContext.hpp that extends it.
 #define KAM_MENU_CATEGORY kcz_context_kam
+
+// --- Shared ZEN context menu condition ---
+// "Is the entity under the cursor a living unit?" - repeated across every
+// component whose context menu action targets a unit rather than a position.
+// Not QUOTE()'d: intended to be nested inside a component's own QUOTE(...) call,
+// e.g. condition = QUOTE(GVAR(enableZenActions) && {KAM_HOVERED_UNIT});
+#define KAM_HOVERED_UNIT _hoveredEntity isEqualType objNull && {_hoveredEntity isKindOf 'CAManBase'}
