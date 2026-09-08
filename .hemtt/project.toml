@@ -12,5 +12,6 @@ include = [
     "meta.cpp",
     "LICENSE",
     "README.md",
-    "logo_ca.paa",
+    "img/icon.paa",
+    "img/icon.png"
 ]
