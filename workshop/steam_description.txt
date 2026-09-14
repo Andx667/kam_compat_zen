@@ -29,7 +29,7 @@ Fully open-source. Bug reports, feature requests, and contributions are all welc
 
 [url=https://github.com/Andx667/kam_compat_zen]GitHub Repository[/url]
 [url=https://github.com/Andx667/kam_compat_zen/issues]Report an Issue[/url]
-[url=https://discord.gg/tupAcSzmW]Discord[/url]
+[url=https://discord.gg/ag4v6kxYAa]Discord[/url]
 
 Licensed under [url=https://github.com/Andx667/kam_compat_zen/blob/main/LICENSE]MIT[/url].
 

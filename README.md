@@ -23,8 +23,9 @@ __KAM Compat ZEN__ (KCZ) bridges KAT - Advanced Medical into Zeus Enhanced, addi
 The project is entirely __open-source__ and any contributions are welcome.
 
 Steam Workshop: <https://steamcommunity.com/sharedfiles/filedetails/?id=3790323793>
+Discord: <https://discord.gg/ag4v6kxYAa>
 
-## Status
+## Features
 
 Addons that add ZEN right-click context menu actions are named after the KAM component they bridge to, and nest their entries under a shared "KAM" category (defined once in `addons/main`).
 
