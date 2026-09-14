@@ -1,7 +1,7 @@
 {
     "recommendations": [
-        "editorconfig.editorconfig",
         "brettmayson.hemtt",
-        "DartRuffian.lazyarmadev"
+        "editorconfig.editorconfig",
+        "DartRuffian.LazyArmaDev"
     ]
 }
