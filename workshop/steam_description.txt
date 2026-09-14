@@ -1,0 +1,38 @@
+[h1]KAM Compat ZEN[/h1]
+
+[b]KAM Compat ZEN[/b] bridges [url=https://github.com/Tomcat-SG/KAM]KAT - Advanced Medical (KAM)[/url] into [url=https://github.com/zen-mod/ZEN]Zeus Enhanced (ZEN)[/url], adding right-click context menu actions for KAM's medical systems — all nested under a single "KAM" category in the Zeus menu.
+
+[h1]Requirements[/h1]
+
+[list]
+[*] [url=https://github.com/CBATeam/CBA_A3]CBA_A3[/url]
+[*] [url=https://github.com/acemod/ACE3]ACE3[/url]
+[*] [url=https://github.com/Tomcat-SG/KAM]KAT - Advanced Medical (KAM)[/url]
+[*] [url=https://github.com/zen-mod/ZEN]Zeus Enhanced (ZEN)[/url]
+[/list]
+
+[h1]Features[/h1]
+
+[list]
+[*] [b]Chemical[/b] — Create Gas Cloud (radius, gas type, sealable)
+[*] [b]Circulation[/b] — Change Blood Type / Volume, Set Cardiac State
+[*] [b]Misc[/b] — Enable / Disable AI Death Prevention
+[*] [b]Breathing[/b] — Set Pneumothorax Severity
+[*] [b]Airway[/b] — Manage Airway (obstruction / occlusion)
+[/list]
+
+Each module has its own CBA setting to hide its menu entry.
+
+[h1]Source & Issues[/h1]
+
+Fully open-source. Bug reports, feature requests, and contributions are all welcome.
+
+[url=https://github.com/Andx667/kam_compat_zen]GitHub Repository[/url]
+[url=https://github.com/Andx667/kam_compat_zen/issues]Report an Issue[/url]
+[url=https://discord.gg/tupAcSzmW]Discord[/url]
+
+Licensed under [url=https://github.com/Andx667/kam_compat_zen/blob/main/LICENSE]MIT[/url].
+
+---
+
+Suchst du eine deutschsprachige Arma3 und Reforger Community? -> https://tacticalteam.de/mitmachen
