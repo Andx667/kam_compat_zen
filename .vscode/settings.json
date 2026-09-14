@@ -1,16 +1,17 @@
 {
     "editor.insertSpaces": true,
-    "editor.tabSize": 4,
     "editor.detectIndentation": false,
-    "files.insertFinalNewline": true,
+
+    "files.autoSave": "onFocusChange",
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+
     "files.associations": {
-        "*.hpp": "cpp",
-        "*.sqf": "sqf"
-    },
-    "[markdown]": {
-        "files.trimTrailingWhitespace": false
+        "*.cpp": "arma-config",
+        "*.hpp": "arma-config",
+        "*.inc": "arma-config",
+        "*.cfg": "arma-config",
+        "*.rvmat": "arma-config"
     }
 }

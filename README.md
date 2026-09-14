@@ -1,6 +1,28 @@
 # KAM Compat ZEN
 
-A compatibility patch between [KAT - Advanced Medical (KAM)](https://github.com/Tomcat-SG/KAM) and [Zeus Enhanced (ZEN)](https://github.com/zen-mod/ZEN) for Arma 3.
+![KAM Compat ZEN Logo](https://github.com/Andx667/kam_compat_zen/blob/main/img/icon.png)
+
+<p align="center">
+    <a href="https://github.com/Andx667/kam_compat_zen/issues">
+        <img src="https://img.shields.io/github/issues-raw/Andx667/kam_compat_zen.svg?style=flat-square&label=Issues" alt="KAM Compat ZEN Issues">
+    </a>
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3790323793">
+        <img src="https://img.shields.io/steam/downloads/3790323793.svg?style=flat-square&label=Downloads" alt="KAM Compat ZEN Downloads">
+    </a>
+    <a href="https://github.com/Andx667/kam_compat_zen/blob/main/LICENSE">
+        <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="KAM Compat ZEN License">
+    </a>
+    <br>
+    <img src="https://img.shields.io/github/actions/workflow/status/Andx667/kam_compat_zen/ci.yml?style=flat-square&label=CI" alt="CI">
+</p>
+
+__Requires__ [CBA_A3](https://github.com/CBATeam/CBA_A3), [ACE3](https://github.com/acemod/ACE3), [KAT - Advanced Medical (KAM)](https://github.com/Tomcat-SG/KAM), and [Zeus Enhanced (ZEN)](https://github.com/zen-mod/ZEN).
+
+__KAM Compat ZEN__ (KCZ) bridges KAT - Advanced Medical into Zeus Enhanced, adding right-click context menu actions for KAM's medical systems.
+
+The project is entirely __open-source__ and any contributions are welcome.
+
+Steam Workshop: <https://steamcommunity.com/sharedfiles/filedetails/?id=3790323793>
 
 ## Status
 
@@ -13,13 +35,6 @@ Addons that add ZEN right-click context menu actions are named after the KAM com
 - `addons/airway` — bridges to KAM's `kat_airway`. Currently implements: **Manage Airway** (obstruction/occlusion checkboxes, right-click a unit).
 
 Each of these addons has its own CBA setting (`Enable ZEN ... Action`) to hide its context menu entry.
-
-## Dependencies
-
-- [CBA_A3](https://github.com/CBATeam/CBA_A3)
-- [ACE3](https://github.com/acemod/ACE3)
-- [KAT - Advanced Medical (KAM)](https://github.com/Tomcat-SG/KAM)
-- [Zeus Enhanced (ZEN)](https://github.com/zen-mod/ZEN)
 
 ## Project layout
 
@@ -37,6 +52,10 @@ hemtt build   # local dev build
 hemtt release # release build
 ```
 
+## Contributing
+
+For new contributors, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).
+
 ## License
 
-See [LICENSE](LICENSE).
+KAM Compat ZEN is licensed under [MIT](./LICENSE).
