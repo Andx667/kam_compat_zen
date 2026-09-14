@@ -13,7 +13,8 @@
         <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="KAM Compat ZEN License">
     </a>
     <br>
-    <img src="https://img.shields.io/github/actions/workflow/status/Andx667/kam_compat_zen/ci.yml?style=flat-square&label=CI" alt="CI">
+    <img src="https://img.shields.io/github/actions/workflow/status/Andx667/kam_compat_zen/check.yml?style=flat-square&label=Check" alt="Check">
+    <img src="https://img.shields.io/github/actions/workflow/status/Andx667/kam_compat_zen/validate.yml?style=flat-square&label=Validate" alt="Validate">
 </p>
 
 __Requires__ [CBA_A3](https://github.com/CBATeam/CBA_A3), [ACE3](https://github.com/acemod/ACE3), [KAT - Advanced Medical (KAM)](https://github.com/Tomcat-SG/KAM), and [Zeus Enhanced (ZEN)](https://github.com/zen-mod/ZEN).

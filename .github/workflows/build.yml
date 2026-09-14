@@ -1,4 +1,4 @@
-name: CI
+name: Build
 
 on:
   push:
@@ -7,20 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  validate:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Validate Stringtables
-        run: python3 tools/stringtable_validator.py
-
-      - name: Validate Config
-        run: python tools/config_style_checker.py
-
   build:
-    name: Check & Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,9 +15,6 @@ jobs:
 
       - name: Setup HEMTT
         uses: arma-actions/hemtt@v1
-
-      - name: Check for errors
-        run: hemtt check --pedantic
 
       - name: Build
         run: hemtt build
