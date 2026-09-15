@@ -10,5 +10,5 @@ action			= "https://github.com/Andx667/kam_compat_zen";	// Website URL, that can
 overview		= "Compatibility patch between KAT - Advanced Medical (KAM) and Zeus Enhanced (ZEN).";	// Supports structured text
 hideName		= 0;						// Hide the extension name
 hidePicture		= 0;						// Hide the extension menu
-dlcColor[]		= { 0.23, 0.39, 0.30, 1 };	// Color used for DLC stripes and backgrounds (RGBA)
+dlcColor[]		= { 0.89, 0.14, 0.10, 1 };	// Medical red (RGBA) — color used for DLC stripes and backgrounds
 logoSmall		= "img\icon_ca.paa";			// Display in creative lists, next to the entities added by the mod
