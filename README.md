@@ -1,6 +1,8 @@
 # KAM Compat ZEN
 
-![KAM Compat ZEN Logo](https://github.com/Andx667/kam_compat_zen/blob/main/img/icon.png)
+<p align="center">
+    <img src="https://github.com/Andx667/kam_compat_zen/blob/main/img/icon.png" alt="KAM Compat ZEN Logo">
+</p>
 
 <p align="center">
     <a href="https://github.com/Andx667/kam_compat_zen/issues">
