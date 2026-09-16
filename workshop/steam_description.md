@@ -4,14 +4,14 @@
 
 This is a **beta** release. Things are functional and tested, but expect rough edges and the occasional bug — please report anything you find on GitHub (link below).
 
-# Requirements
+## Requirements
 
 - [CBA_A3](https://steamcommunity.com/workshop/filedetails/?id=450814997)
 - [ACE3](https://steamcommunity.com/workshop/filedetails/?id=463939057)
 - [KAT - Advanced Medical (KAM)](https://steamcommunity.com/sharedfiles/filedetails/?id=2020940806)
 - [Zeus Enhanced (ZEN)](https://steamcommunity.com/sharedfiles/filedetails/?id=1779063631)
 
-# Features
+## Features
 
 - **Chemical** — Create Gas Cloud (radius, gas type, sealable)
 - **Circulation** — Change Blood Type / Volume, Set Cardiac State
@@ -21,7 +21,7 @@ This is a **beta** release. Things are functional and tested, but expect rough e
 
 Each module has its own CBA setting to hide its menu entry.
 
-# Source & Issues
+## Source & Issues
 
 Fully open-source. Bug reports, feature requests, and contributions are all welcome.
 
