@@ -1,13 +1,15 @@
-# KAM Compat ZEN
+# KAM Compat ZEN [Beta]
 
 **KAM Compat ZEN** bridges [KAT - Advanced Medical (KAM)](https://github.com/Tomcat-SG/KAM) into [Zeus Enhanced (ZEN)](https://github.com/zen-mod/ZEN), adding right-click context menu actions for KAM's medical systems — all nested under a single "KAM" category in the Zeus menu.
 
+This is a **beta** release. Things are functional and tested, but expect rough edges and the occasional bug — please report anything you find on GitHub (link below).
+
 # Requirements
 
-- [CBA_A3](https://github.com/CBATeam/CBA_A3)
-- [ACE3](https://github.com/acemod/ACE3)
-- [KAT - Advanced Medical (KAM)](https://github.com/Tomcat-SG/KAM)
-- [Zeus Enhanced (ZEN)](https://github.com/zen-mod/ZEN)
+- [CBA_A3](https://steamcommunity.com/workshop/filedetails/?id=450814997)
+- [ACE3](https://steamcommunity.com/workshop/filedetails/?id=463939057)
+- [KAT - Advanced Medical (KAM)](https://steamcommunity.com/sharedfiles/filedetails/?id=2020940806)
+- [Zeus Enhanced (ZEN)](https://steamcommunity.com/sharedfiles/filedetails/?id=1779063631)
 
 # Features
 
@@ -31,4 +33,4 @@ Licensed under [MIT](https://github.com/Andx667/kam_compat_zen/blob/main/LICENSE
 
 ---
 
-Suchst du eine deutschsprachige Arma3 und Reforger Community? -> https://tacticalteam.de/mitmachen
+Suchst du eine deutschsprachige Arma3 und Reforger Community? -> [tacticalteam.de/mitmachen](https://tacticalteam.de/mitmachen)
