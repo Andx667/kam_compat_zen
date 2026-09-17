@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="kcz">
-    <Package name="airway">
-        <Key ID="STR_kcz_airway_Obstruction_Label">
+    <Package name="Airway">
+        <Key ID="STR_kcz_Airway_Obstruction_Label">
             <English>Airway Obstruction</English>
         </Key>
-        <Key ID="STR_kcz_airway_Obstruction_Tooltip">
+        <Key ID="STR_kcz_Airway_Obstruction_Tooltip">
             <English>Airway blocked by a foreign object</English>
         </Key>
-        <Key ID="STR_kcz_airway_Occluded_Label">
+        <Key ID="STR_kcz_Airway_Occluded_Label">
             <English>Airway Occluded</English>
         </Key>
-        <Key ID="STR_kcz_airway_Occluded_Tooltip">
+        <Key ID="STR_kcz_Airway_Occluded_Tooltip">
             <English>Airway occluded (e.g. by the tongue)</English>
         </Key>
-        <Key ID="STR_kcz_airway_Setting_EnableZenActions_Description">
+        <Key ID="STR_kcz_Airway_Setting_EnableZenActions_Description">
             <English>Show the "Manage Airway" action in the ZEN Zeus right-click context menu</English>
         </Key>
-        <Key ID="STR_kcz_airway_Setting_EnableZenActions_DisplayName">
+        <Key ID="STR_kcz_Airway_Setting_EnableZenActions_DisplayName">
             <English>Enable ZEN Airway Actions</English>
         </Key>
     </Package>

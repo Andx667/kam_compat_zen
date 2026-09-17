@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="kcz">
-    <Package name="breathing">
-        <Key ID="STR_kcz_breathing_Pneumothorax_DialogTitle">
+    <Package name="Breathing">
+        <Key ID="STR_kcz_Breathing_Pneumothorax_DialogTitle">
             <English>Set Pneumothorax Severity</English>
         </Key>
-        <Key ID="STR_kcz_breathing_Pneumothorax_DisplayName">
+        <Key ID="STR_kcz_Breathing_Pneumothorax_DisplayName">
             <English>Set Pneumothorax Severity</English>
         </Key>
-        <Key ID="STR_kcz_breathing_Pneumothorax_Label">
+        <Key ID="STR_kcz_Breathing_Pneumothorax_Label">
             <English>Pneumothorax Severity</English>
         </Key>
-        <Key ID="STR_kcz_breathing_Pneumothorax_Tooltip">
+        <Key ID="STR_kcz_Breathing_Pneumothorax_Tooltip">
             <English>0 = none, 4 = severe tension pneumothorax</English>
         </Key>
-        <Key ID="STR_kcz_breathing_Setting_EnableZenActions_Description">
+        <Key ID="STR_kcz_Breathing_Setting_EnableZenActions_Description">
             <English>Show the "Set Pneumothorax Severity" action in the ZEN Zeus right-click context menu</English>
         </Key>
-        <Key ID="STR_kcz_breathing_Setting_EnableZenActions_DisplayName">
+        <Key ID="STR_kcz_Breathing_Setting_EnableZenActions_DisplayName">
             <English>Enable ZEN Breathing Actions</English>
         </Key>
     </Package>
