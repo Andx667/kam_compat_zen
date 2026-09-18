@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="kcz">
-    <Package name="main">
-        <Key ID="STR_kcz_main_Category_DisplayName">
+    <Package name="Main">
+        <Key ID="STR_kcz_Main_Category_DisplayName">
             <English>KAM</English>
         </Key>
     </Package>
