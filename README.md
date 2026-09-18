@@ -25,7 +25,7 @@ __KAM Compat ZEN__ (KCZ) bridges KAT - Advanced Medical into Zeus Enhanced, addi
 
 The project is entirely __open-source__ and any contributions are welcome.
 
-Steam Workshop: <https://steamcommunity.com/sharedfiles/filedetails/?id=3790323793>
+Steam Workshop: <https://steamcommunity.com/sharedfiles/filedetails/?id=3790323793>  
 Discord: <https://discord.gg/ag4v6kxYAa>
 
 ## Features
