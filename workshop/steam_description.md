@@ -1,8 +1,6 @@
-# KAM Compat ZEN [Beta]
+# KAM Compat ZEN
 
-**KAM Compat ZEN** bridges [KAT - Advanced Medical (KAM)](https://github.com/Tomcat-SG/KAM) into [Zeus Enhanced (ZEN)](https://github.com/zen-mod/ZEN), adding right-click context menu actions for KAM's medical systems — all nested under a single "KAM" category in the Zeus menu.
-
-This is a **beta** release. Things are functional and tested, but expect rough edges and the occasional bug — please report anything you find on GitHub (link below).
+**KAM Compat ZEN** bridges [KAT - Advanced Medical (KAM)](https://github.com/KAT-Advanced-Medical/KAM) into [Zeus Enhanced (ZEN)](https://github.com/zen-mod/ZEN), adding right-click context menu actions for KAM's medical systems — all nested under a single "KAM" category in the Zeus menu.
 
 ## Requirements
 
@@ -13,10 +11,10 @@ This is a **beta** release. Things are functional and tested, but expect rough e
 
 ## Features
 
-- **Chemical** — Create Gas Cloud (radius, gas type, sealable)
+- **Chemical** — Create Gas Cloud (radius, gas type, sealable), Remove Gas Cloud
 - **Circulation** — Change Blood Type / Volume, Set Cardiac State
 - **Misc** — Enable / Disable AI Death Prevention
-- **Breathing** — Set Pneumothorax Severity
+- **Breathing** — Manage Breathing (pneumothorax severity and deterioration, hemopneumothorax, tension pneumothorax, PaO2)
 - **Airway** — Manage Airway (obstruction / occlusion)
 
 Each module has its own CBA setting to hide its menu entry.

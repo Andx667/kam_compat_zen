@@ -24,6 +24,8 @@ if (_currentIndex == -1) then {_currentIndex = 1};
 private _defaultBodyFluid = [2700, 3300, 500, 10000, 6000];
 private _currentVolumeL = ((_unit getVariable [QKATGVAR(circulation,bodyFluid), _defaultBodyFluid]) select 4) / 1000;
 
+// The trailing "true" on each row forces the unit's current state as the default. Without it ZEN
+// restores the values last confirmed for an identical dialog, which can belong to a different unit.
 [
     KATLLSTRING(zeus,bloodType_Module_displayname),
     [
@@ -31,8 +33,8 @@ private _currentVolumeL = ((_unit getVariable [QKATGVAR(circulation,bodyFluid), 
             _bloodTypes,
             [["O+"], ["O-"], ["A+"], ["A-"], ["B+"], ["B-"], ["AB+"], ["AB-"]],
             _currentIndex
-        ]],
-        ["SLIDER", [LLSTRING(BloodVolume_Label), LLSTRING(BloodVolume_Tooltip)], [0, 6, _currentVolumeL, 2]]
+        ], true],
+        ["SLIDER", [LLSTRING(BloodVolume_Label), LLSTRING(BloodVolume_Tooltip)], [0, 6, _currentVolumeL, 2], true]
     ],
     {
         params ["_values", "_unit"];
