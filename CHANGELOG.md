@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-09-26
+
 ### Added
 
 - Chemical: **Remove Gas Cloud** action, shown when the cursor is inside a gas cloud created by this mod or on the object one is attached to
@@ -25,8 +27,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Breathing: setting the pneumothorax severity to 0 no longer clears the blood pressure effect of a unit that still has hemopneumothorax or tension pneumothorax
 - Airway, breathing and circulation dialogs now show the target unit's current state instead of the values last confirmed for a different unit
 - Chemical: gas clouds created from the context menu could never be removed and clouds attached to a deleted object were never cleaned up
-
-## [1.1.0] - 2026-09-18
 
 ## [1.0.0] - 2026-09-08
 
