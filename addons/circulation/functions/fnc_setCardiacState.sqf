@@ -18,6 +18,8 @@ params ["_unit"];
 
 private _currentState = _unit getVariable [QKATGVAR(circulation,cardiacArrestType), 0];
 
+// The trailing "true" forces the unit's current state as the default. Without it ZEN restores
+// the value last confirmed for an identical dialog, which can belong to a different unit.
 [
     KATLLSTRING(zeus,CardiacState_Module_displayname),
     [
@@ -31,7 +33,7 @@ private _currentState = _unit getVariable [QKATGVAR(circulation,cardiacArrestTyp
                 [LLSTRING(CardiacState_VT)]
             ],
             _currentState
-        ]]
+        ], true]
     ],
     {
         params ["_values", "_unit"];

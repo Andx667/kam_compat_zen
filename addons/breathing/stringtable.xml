@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="kcz">
     <Package name="Breathing">
-        <Key ID="STR_kcz_Breathing_Pneumothorax_DialogTitle">
-            <English>Set Pneumothorax Severity</English>
+        <Key ID="STR_kcz_Breathing_Deteriorate_Label">
+            <English>Start Deterioration</English>
         </Key>
-        <Key ID="STR_kcz_Breathing_Pneumothorax_DisplayName">
-            <English>Set Pneumothorax Severity</English>
+        <Key ID="STR_kcz_Breathing_Deteriorate_Tooltip">
+            <English>Let the pneumothorax worsen over time, as an untreated one would. Only applies to a plain pneumothorax that hasn't advanced yet</English>
+        </Key>
+        <Key ID="STR_kcz_Breathing_Hemopneumothorax_Label">
+            <English>Hemopneumothorax</English>
+        </Key>
+        <Key ID="STR_kcz_Breathing_Hemopneumothorax_Tooltip">
+            <English>Blood collecting in the chest cavity, causing internal bleeding. Sets the severity to 4</English>
+        </Key>
+        <Key ID="STR_kcz_Breathing_ManageBreathing_DialogTitle">
+            <English>Manage Breathing</English>
+        </Key>
+        <Key ID="STR_kcz_Breathing_ManageBreathing_DisplayName">
+            <English>Manage Breathing</English>
+        </Key>
+        <Key ID="STR_kcz_Breathing_PaO2_Label">
+            <English>PaO2</English>
+        </Key>
+        <Key ID="STR_kcz_Breathing_PaO2_Tooltip">
+            <English>Arterial oxygen level. A healthy unit sits around 90</English>
         </Key>
         <Key ID="STR_kcz_Breathing_Pneumothorax_Label">
             <English>Pneumothorax Severity</English>
@@ -14,10 +32,16 @@
             <English>0 = none, 4 = severe tension pneumothorax</English>
         </Key>
         <Key ID="STR_kcz_Breathing_Setting_EnableZenActions_Description">
-            <English>Show the "Set Pneumothorax Severity" action in the ZEN Zeus right-click context menu</English>
+            <English>Show the "Manage Breathing" action in the ZEN Zeus right-click context menu</English>
         </Key>
         <Key ID="STR_kcz_Breathing_Setting_EnableZenActions_DisplayName">
             <English>Enable ZEN Breathing Actions</English>
+        </Key>
+        <Key ID="STR_kcz_Breathing_TensionPneumothorax_Label">
+            <English>Tension Pneumothorax</English>
+        </Key>
+        <Key ID="STR_kcz_Breathing_TensionPneumothorax_Tooltip">
+            <English>Air trapped under pressure in the chest, severely impairing breathing and circulation. Sets the severity to 4</English>
         </Key>
     </Package>
 </Project>

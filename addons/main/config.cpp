@@ -19,8 +19,8 @@ class CfgPatches {
 class CfgMods {
     class PREFIX {
         dir = "@KAM_Compat_ZEN";
-        name = "KAM Compat ZEN [Beta]";
-        picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca";
+        name = "KAM Compat ZEN";
+        picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca.paa";
         hidePicture = "true";
         hideName = "true";
         actionName = "Website";

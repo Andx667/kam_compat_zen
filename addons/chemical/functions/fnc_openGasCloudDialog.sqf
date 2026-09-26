@@ -51,18 +51,7 @@ if (_isObject) then {
         params ["_values", "_source"];
         _values params ["_radius", "_gasLevel", ["_isSealable", false]];
 
-        [QKATGVAR(chemical,addGasSource), [
-            _source,
-            _radius,
-            _gasLevel,
-            _source,
-            {
-                params ["_endTime"];
-                CBA_missionTime < _endTime
-            },
-            [CBA_missionTime + 1e10],
-            _isSealable
-        ]] call CBA_fnc_serverEvent;
+        [QGVAR(createCloud), [_source, _radius, _gasLevel, _isSealable]] call CBA_fnc_serverEvent;
     },
     {},
     _source

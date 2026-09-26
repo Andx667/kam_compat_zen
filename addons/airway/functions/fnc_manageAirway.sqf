@@ -16,11 +16,13 @@
  */
 params ["_unit"];
 
+// The trailing "true" forces the unit's current state as the default. Without it ZEN restores
+// the values last confirmed for an identical dialog, which can belong to a different unit.
 [
     KATLLSTRING(zeus,manageAirway_Module_displayname),
     [
-        ["CHECKBOX", [LLSTRING(Obstruction_Label), LLSTRING(Obstruction_Tooltip)], _unit getVariable [QKATGVAR(airway,obstruction), false]],
-        ["CHECKBOX", [LLSTRING(Occluded_Label), LLSTRING(Occluded_Tooltip)], _unit getVariable [QKATGVAR(airway,occluded), false]]
+        ["CHECKBOX", [LLSTRING(Obstruction_Label), LLSTRING(Obstruction_Tooltip)], _unit getVariable [QKATGVAR(airway,obstruction), false], true],
+        ["CHECKBOX", [LLSTRING(Occluded_Label), LLSTRING(Occluded_Tooltip)], _unit getVariable [QKATGVAR(airway,occluded), false], true]
     ],
     {
         params ["_values", "_unit"];

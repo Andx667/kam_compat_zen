@@ -1,4 +1,4 @@
-name            = "KAM Compat ZEN [Beta] v0.0.0";    // Name of your mod
+name            = "KAM Compat ZEN v0.0.0";    // Name of your mod
 author            = "Andx";                    // Affects Arma 3 Launcher, when the mod are loaded as local
 logo            = "img\icon_ca.paa";            // Logo displayed in the main menu
 logoOver        = "img\icon_ca.paa";            // When the mouse is over, in the main menu

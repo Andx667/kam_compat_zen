@@ -6,5 +6,11 @@ class zen_context_menu_actions {
             condition = QUOTE(GVAR(enableZenActions) && {!(KAM_HOVERED_UNIT)});
             statement = QUOTE([ARR_2(_position,_hoveredEntity)] call FUNC(openGasCloudDialog));
         };
+        class GVAR(removeGasCloud) {
+            displayName = CSTRING(RemoveGasCloud_DisplayName);
+            icon = QKATPATHTOF(chemical,ui\Gasmask_icon.paa);
+            condition = QUOTE(GVAR(enableZenActions) && {([ARR_2(_position,_hoveredEntity)] call FUNC(getGasCloudsAt)) isNotEqualTo []});
+            statement = QUOTE([ARR_2(_position,_hoveredEntity)] call FUNC(removeGasCloudsAt));
+        };
     };
 };

@@ -12,6 +12,7 @@ class CfgPatches {
             "ace_main",
             "kat_main",
             "kat_airway",
+            "kat_zeus",
             "zen_main",
             "zen_context_menu",
             "zen_dialog"

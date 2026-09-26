@@ -10,11 +10,17 @@
         <Key ID="STR_kcz_Chemical_GasCloud_Sealable_Tooltip">
             <English>Allow this gas source to be sealed off with a sealant</English>
         </Key>
+        <Key ID="STR_kcz_Chemical_RemoveGasCloud_DisplayName">
+            <English>Remove Gas Cloud</English>
+        </Key>
+        <Key ID="STR_kcz_Chemical_RemoveGasCloud_Removed">
+            <English>Removed %1 gas cloud(s)</English>
+        </Key>
         <Key ID="STR_kcz_Chemical_Setting_EnableZenActions_Description">
-            <English>Show the "Create Gas Cloud" action in the ZEN Zeus right-click context menu</English>
+            <English>Show the "Create Gas Cloud" and "Remove Gas Cloud" actions in the ZEN Zeus right-click context menu</English>
         </Key>
         <Key ID="STR_kcz_Chemical_Setting_EnableZenActions_DisplayName">
-            <English>Enable ZEN Gas Cloud Action</English>
+            <English>Enable ZEN Gas Cloud Actions</English>
         </Key>
     </Package>
 </Project>

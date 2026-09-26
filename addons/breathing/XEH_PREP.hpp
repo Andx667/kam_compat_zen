@@ -1,1 +1,2 @@
-PREP(setPneumothorax);
+PREP(applyBreathing);
+PREP(manageBreathing);
