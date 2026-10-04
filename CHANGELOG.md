@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-10-04
+
+### Changed
+
+- Airway, breathing, chemical, circulation and misc now set `skipWhenMissingDependencies`, so a component whose KAM or ZEN dependency is not loaded is skipped instead of raising a missing-addon error
+
 ## [1.1.0] - 2026-09-26
 
 ### Added
@@ -39,6 +45,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Breathing: Set Pneumothorax Severity
   - Airway: Manage Airway (obstruction / occlusion)
 
-[Unreleased]: https://github.com/Andx667/kam_compat_zen/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/Andx667/kam_compat_zen/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/Andx667/kam_compat_zen/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/Andx667/kam_compat_zen/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Andx667/kam_compat_zen/releases/tag/v1.0.0
