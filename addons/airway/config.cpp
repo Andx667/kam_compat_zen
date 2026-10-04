@@ -17,6 +17,7 @@ class CfgPatches {
             "zen_context_menu",
             "zen_dialog"
         };
+        skipWhenMissingDependencies = 1;
         author = "Andx";
         authors[] = {"Andx"};
         url = "";
