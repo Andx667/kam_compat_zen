@@ -17,5 +17,5 @@ include = [
     "LICENSE",
     "README.md",
     "img/icon_ca.paa",
-    "img/icon.png"
+    "img/logo_ca.paa"
 ]
