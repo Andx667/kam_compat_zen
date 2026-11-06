@@ -13,17 +13,17 @@
         <Key ID="STR_kcz_Breathing_Hemopneumothorax_Tooltip">
             <English>Blood collecting in the chest cavity, causing internal bleeding. Sets the severity to 4</English>
         </Key>
-        <Key ID="STR_kcz_Breathing_LungInjury_Label">
-            <English>Lung Injury</English>
-        </Key>
-        <Key ID="STR_kcz_Breathing_LungInjury_Tooltip">
-            <English>Diffuse lung damage from inhalation or blast. It ramps in over time and can only be raised here; dexamethasone or a full heal clears it</English>
-        </Key>
         <Key ID="STR_kcz_Breathing_LungInjuryProgressive_Label">
             <English>Lung Injury Keeps Worsening</English>
         </Key>
         <Key ID="STR_kcz_Breathing_LungInjuryProgressive_Tooltip">
             <English>Make the lung injury worsen until treated, like a chlorine injury. It only worsens from 35% upward. Atropine halts it, dexamethasone reverses it. Unchecked, it holds where it peaks, like blast damage</English>
+        </Key>
+        <Key ID="STR_kcz_Breathing_LungInjury_Label">
+            <English>Lung Injury</English>
+        </Key>
+        <Key ID="STR_kcz_Breathing_LungInjury_Tooltip">
+            <English>Diffuse lung damage from inhalation or blast. It ramps in over time and can only be raised here; dexamethasone or a full heal clears it</English>
         </Key>
         <Key ID="STR_kcz_Breathing_ManageBreathing_DialogTitle">
             <English>Manage Breathing</English>
