@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Chemical: **Decontaminate** action, shown on a unit with mustard or VX skin contamination, clears it the way KAM's Decontaminate treatment does
+
 ## [1.2.1] - 2026-11-01
 
 ### Changed
