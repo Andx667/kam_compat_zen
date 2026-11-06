@@ -42,6 +42,16 @@ private _currentVolumeL = ((_unit getVariable [QKATGVAR(circulation,bodyFluid), 
 
         _unit setVariable [QKATGVAR(circulation,bloodtype), _bloodType, true];
 
+        // Keep the ACE dog tag in sync, as KAM's own blood type module does. KAM's dog tag data is
+        // [name, blood type, group ID] with "0" for O. Units whose dog tag data hasn't been created
+        // yet need nothing: KAM builds it from kat_circulation_bloodtype on first use.
+        private _dogtagData = _unit getVariable QACEGVAR(dogtags,dogtagData);
+        if (!isNil "_dogtagData") then {
+            _dogtagData = +_dogtagData;
+            _dogtagData set [1, ["0+", "0-", "A+", "A-", "B+", "B-", "AB+", "AB-"] select (["O", "O_N", "A", "A_N", "B", "B_N", "AB", "AB_N"] find _bloodType)];
+            _unit setVariable [QACEGVAR(dogtags,dogtagData), _dogtagData, true];
+        };
+
         // Mirrors KAM's kat_circulation REDUCE_TOTAL_BLOOD_VOLUME macro: changing the
         // total blood volume also shifts the ECB/ECP compartments by half the delta each.
         private _defaultBodyFluid = [2700, 3300, 500, 10000, 6000];
