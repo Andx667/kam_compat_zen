@@ -32,7 +32,7 @@ Discord: <https://discord.gg/ag4v6kxYAa>
 
 Addons that add ZEN right-click context menu actions are named after the KAM component they bridge to, and nest their entries under a shared "KAM" category (defined once in `addons/main`).
 
-- `addons/chemical` — bridges to KAM's `kat_chemical`. Currently implements: **Create Gas Cloud** (radius/gas type/sealable dialog, wired to KAM's gas source system) and **Remove Gas Cloud** (right-click inside a cloud created by this mod).
+- `addons/chemical` — bridges to KAM's `kat_chemical`. Currently implements: **Create Gas Cloud** (radius/gas type/particles/sealable dialog, wired to KAM's gas source system) and **Remove Gas Cloud** (right-click inside a cloud created by this mod).
 - `addons/circulation` — bridges to KAM's `kat_circulation`. Currently implements: **Change Blood Type / Volume** and **Set Cardiac State** (combo/slider dialogs, right-click a unit).
 - `addons/misc` — bridges to KAM's `kat_misc`. Currently implements: **Enable/Disable AI Death Prevention** (explicit-state actions, right-click an AI unit).
 - `addons/breathing` — bridges to KAM's `kat_breathing`. Currently implements: **Manage Breathing** (pneumothorax severity and deterioration, hemopneumothorax, tension pneumothorax, PaO2; right-click a unit).
