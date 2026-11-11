@@ -14,16 +14,18 @@
  * 3: Hemopneumothorax <BOOL>
  * 4: Tension pneumothorax <BOOL>
  * 5: PaO2 <NUMBER>
+ * 6: Lung injury severity (0-1), KAM 3.2.1+ only <NUMBER> (default: 0)
+ * 7: Lung injury keeps worsening until treated <BOOL> (default: false)
  *
  * Return Value:
  * None
  *
  * Example:
- * [_unit, 2, false, false, false, 90] call kcz_breathing_fnc_applyBreathing;
+ * [_unit, 2, false, false, false, 90, 0.5, true] call kcz_breathing_fnc_applyBreathing;
  *
  * Public: No
  */
-params ["_unit", "_severity", "_deteriorate", "_hemopneumothorax", "_tensionPneumothorax", "_paO2"];
+params ["_unit", "_severity", "_deteriorate", "_hemopneumothorax", "_tensionPneumothorax", "_paO2", ["_lungInjury", 0], ["_lungInjuryProgressive", false]];
 
 private _advanced = _hemopneumothorax || {_tensionPneumothorax};
 
@@ -63,3 +65,21 @@ if (_deteriorate && {_severity > 0} && {!_advanced}) then {
 
 // Hemopneumothorax causes internal bleeding
 [_unit] call KATFUNC(circulation,updateInternalBleeding);
+
+// Lung injury goes through KAM's public setLungInjury (KAM 3.2.1+), which only ever raises the
+// injury: lowering the slider does nothing, only dexamethasone or a full heal clears it. Only
+// call it when something would change, so confirming the dialog for other edits leaves it be.
+// The progressive variant uses chlorine's progression rate (0.00025/s, scaled by KAM's
+// lungInjury_progressionMultiplier setting); KAM only applies it from 35% severity upward.
+if (_lungInjury > 0 && {!isNil QKATFUNC(breathing,setLungInjury)}) then {
+    // Same value the dialog slider starts at, so an untouched slider never counts as a raise
+    private _current = (_unit getVariable [QKATGVAR(breathing,lungInjury), 0]) max (_unit getVariable [QKATGVAR(breathing,lungInjuryTarget), 0]);
+
+    if (_lungInjury > _current || {_lungInjuryProgressive}) then {
+        if (_lungInjuryProgressive) then {
+            [_unit, _lungInjury, "chlorine", 0.00025] call KATFUNC(breathing,setLungInjury);
+        } else {
+            [_unit, _lungInjury, "blast"] call KATFUNC(breathing,setLungInjury);
+        };
+    };
+};

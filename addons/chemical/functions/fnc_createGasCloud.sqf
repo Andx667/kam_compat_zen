@@ -14,16 +14,17 @@
  * 1: Radius <NUMBER>
  * 2: Gas level, KAM's gas type index <NUMBER>
  * 3: Sealable <BOOL>
+ * 4: Show gas particles, ignored by KAM before 3.2.1 <BOOL> (default: true)
  *
  * Return Value:
  * None
  *
  * Example:
- * [_position, 20, 1, false] call FUNC(createGasCloud);
+ * [_position, 20, 1, false, true] call FUNC(createGasCloud);
  *
  * Public: No
  */
-params ["_source", "_radius", "_gasLevel", "_isSealable"];
+params ["_source", "_radius", "_gasLevel", "_isSealable", ["_enableParticles", true]];
 
 private _isObject = _source isEqualType objNull;
 
@@ -47,7 +48,8 @@ private _id = if (_isObject) then {
         _id in GVAR(clouds) && {_source isEqualType [] || {!isNull _source}}
     },
     [_id, _source],
-    _isSealable
+    _isSealable,
+    _enableParticles
 ]] call CBA_fnc_serverEvent;
 
 // Registered after the call on purpose: replacing a cloud makes older KAM versions fire
