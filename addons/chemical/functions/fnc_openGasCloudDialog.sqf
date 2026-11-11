@@ -38,6 +38,14 @@ private _content = [
     ]]
 ];
 
+// The per-zone particle toggle came with KAM 3.2.1, together with its label. Older KAM
+// versions ignore the extra addGasSource argument, so only offer the checkbox where it works.
+private _hasParticleToggle = isLocalized KATLSTRING(chemical,UI_particles);
+
+if (_hasParticleToggle) then {
+    _content pushBack ["CHECKBOX", [KATLLSTRING(chemical,UI_particles), KATLLSTRING(chemical,UI_particles_tooltip)], true];
+};
+
 // Sealing only makes sense when the gas source is attached to an object;
 // there is nothing to seal when it's just anchored to an open position.
 if (_isObject) then {
@@ -48,11 +56,21 @@ if (_isObject) then {
     KATLLSTRING(chemical,GasModule_Displayname),
     _content,
     {
-        params ["_values", "_source"];
-        _values params ["_radius", "_gasLevel", ["_isSealable", false]];
+        params ["_values", "_args"];
+        _args params ["_source", "_hasParticleToggle", "_isObject"];
+        _values params ["_radius", "_gasLevel"];
 
-        [QGVAR(createCloud), [_source, _radius, _gasLevel, _isSealable]] call CBA_fnc_serverEvent;
+        // The optional checkboxes follow radius and gas type in the order they were added
+        private _index = 2;
+        private _enableParticles = true;
+        if (_hasParticleToggle) then {
+            _enableParticles = _values select _index;
+            _index = _index + 1;
+        };
+        private _isSealable = _isObject && {_values select _index};
+
+        [QGVAR(createCloud), [_source, _radius, _gasLevel, _isSealable, _enableParticles]] call CBA_fnc_serverEvent;
     },
     {},
-    _source
+    [_source, _hasParticleToggle, _isObject]
 ] call zen_dialog_fnc_create;
