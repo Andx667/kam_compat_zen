@@ -1,9 +1,10 @@
 # chemical
 
-Bridges to KAM's [`kat_chemical`](https://github.com/KAT-Advanced-Medical/KAM). Adds two ZEN right-click actions under the shared "KAM" category:
+Bridges to KAM's [`kat_chemical`](https://github.com/KAT-Advanced-Medical/KAM). Adds three ZEN right-click actions under the shared "KAM" category:
 
 - **Create Gas Cloud** — radius/gas-type/sealable dialog, available on empty positions and on non-unit objects.
 - **Remove Gas Cloud** — appears when the cursor is inside a cloud created by this mod, or on the object one is attached to, and removes those clouds.
+- **Decontaminate** — appears on a living unit with skin contamination (mustard or VX) and clears it through KAM's own `KATFUNC(chemical,clearContamination)`, the function behind KAM's Decontaminate treatment. It stops the contamination and its pending delayed effects; injuries already caused stay.
 
 Creation goes through KAM's own networked gas source system (`KATGVAR(chemical,addGasSource)` via `CBA_fnc_serverEvent`), not a locally set variable, since gas sources are server-authoritative in KAM. The **Sealable** checkbox only appears when the source is attached to an object — sealing has no meaning for a gas cloud anchored to open terrain. The **Gas particles** checkbox (KAM's per-zone particle toggle) only appears with KAM 3.2.1 or newer, detected by whether KAM's `STR_KAT_Chemical_UI_particles` string exists; older KAM versions have no such option and always show particles.
 
