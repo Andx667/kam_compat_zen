@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Circulation: **Change Blood Type / Volume** now also updates the blood type on the unit's ACE dog tag, as KAM's own module does
+
 ### Added
 
 - Chemical: **Gas particles** checkbox in **Create Gas Cloud**, using KAM's per-zone particle toggle (requires KAM 3.2.1 or newer; hidden on older versions)
